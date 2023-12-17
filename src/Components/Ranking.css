@@ -1,0 +1,96 @@
+/* Container for tables */
+.table-container {
+  display: flex;
+  flex-wrap: wrap;
+  /*justify-content: space-between; */
+  max-width: 0;
+  
+}
+
+/* Ranking Container */
+.ranking-container {
+  background-color: #f9f9f9;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  flex: 1; /* Equal width for all containers within the flex container */
+  /*margin-right: 10px;*/
+}
+
+
+/* Ranking Title */
+.ranking-title {
+  color: #007bff;
+}
+
+/* Ranking Table */
+.ranking-table {
+  animation: fadeIn 1s;
+  width: 100%;
+  border-collapse: separate; /* Keep table borders separate */
+  border-spacing: 2px; /* Add space between table cells */
+  
+}
+
+.ranking-table th,
+.ranking-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  
+}
+
+.ranking-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.ranking-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* WordCloud Container */
+.wordcloud-container {
+  background-color: #fff; /* White background */
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* WordCloud Title */
+.wordcloud-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* WordCloud Content */
+.wordcloud-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+/* Table Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*Bar Graph*/
+
+.bar-graph
+{
+  background-color: white;
+}

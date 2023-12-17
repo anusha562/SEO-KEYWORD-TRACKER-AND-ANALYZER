@@ -1,0 +1,75 @@
+/* Background Image */
+body {
+  background-image: url(subtle-prism.svg); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Landing Page Styles */
+.landing-page {
+  text-align: center;
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  padding: 20px;
+  border-radius: 10px;
+  animation: fadeIn 1s;
+}
+
+.landing-page h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.landing-page h2 {
+  background-color: #0da7e4; /* Change to a blue background */
+  color: #fff; /* Text color is white */
+  font-size: 2.5rem; /* Slightly larger font size */
+  padding: 20px; /* Increased padding for a more prominent look */
+  border: 2px solid #0d0f11; /* Darker blue border */
+  border-radius: 15px; /* Slightly more rounded corners */
+  text-align: center; /* Center-align text */
+  animation: slide-in 1s ease-in-out; /* Use a slide-in animation */
+}
+
+/* Define a slide-in animation */
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.landing-page .explore-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.landing-page .explore-button:hover {
+  background-color: #0d0b0e;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
